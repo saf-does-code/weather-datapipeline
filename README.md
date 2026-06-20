@@ -1,6 +1,10 @@
 # Weather Data Pipeline
 An automated data pipeline that collects daily maximum temperature data for Dubai and exposes it through a REST API.
 
+## Live demo
+- **API:** https://weather-api-je49.onrender.com
+- **Website:** https://saf-does-code.github.io/weather-datapipeline
+
 ## What does it do?
 - Fetches daily weather data of 31 cities across 6 continents from the Open-Meteo API  
 - Stores historical records in a PostgreSQL database (Neon)
