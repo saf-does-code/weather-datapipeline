@@ -1,6 +1,7 @@
 import os
 import psycopg2
 from fastapi import FastAPI, Query
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
