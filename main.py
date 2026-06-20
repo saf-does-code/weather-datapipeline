@@ -4,6 +4,16 @@ from fastapi import FastAPI, Query
 
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://saf-does-code.github.io",
+        "http://127.0.0.1:3000"
+    ],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 def get_conn():
     return psycopg2.connect(os.environ["DATABASE_URL"])
 
